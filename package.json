@@ -35,6 +35,8 @@
     "rxjs": "^6.4.0"
   },
   "dependencies": {
+    "core-js": "^3.6.4",
+    "node": "^13.8.0",
     "rollup": "^0.41.4"
   }
 }
