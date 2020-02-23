@@ -6,7 +6,11 @@ function testDestructuring([, arrayIndex,], {name: objectName} = {name: 'toto'},
 // spread operator
 function updateUserInformation(userList, userId, newInformation) {
   return {
-    // renvoyer directement la nouvelle userList avec l'utilisateur mis à jour
+    ...userList,
+    [userId]: {
+      ...userList[userId],
+      ...newInformation
+    }
   };
 }
 
